@@ -29,4 +29,4 @@ and organize data in order to facilitate access and modifications.
 
  * **Efficiency**
  
-    * Algorithms designed for the same problem can differ due to different hardware , software and execution time 
+    * Algorithms their efficiency designed for the same problem can differ due to different hardware ,software and execution time 
