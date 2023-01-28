@@ -15,11 +15,11 @@ and organize data in order to facilitate access and modifications.
 ----------
 * **NP-complete problems**
     
-    * **NP** On the set of problems that do not have an efficient solution algorithm, but it is easy to validate a solution
+    * **NP**_ On the set of problems that do not have an efficient solution algorithm, but it is easy to validate a solution
     
          * If you find a solution to one of the problems, it is can to solve all of them
          
-   * **P** Problems have clear and effective algorithms and clear steps to solve them
+   * **P**_ Problems have clear and effective algorithms and clear steps to solve them
 ------------------------
 **Parallelism**
   * Execute many operations simultaneously
