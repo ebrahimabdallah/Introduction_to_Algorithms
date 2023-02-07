@@ -1,4 +1,6 @@
 ```
+//implementation algo with c++
+
 #include<iostream>
 #include<algorithm>
 #include<vector>
