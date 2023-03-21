@@ -8,7 +8,6 @@
 *  an algorithm that is asymptotically more efficient will be the best choice
 for all but very small inputs.
 
-* We will use asymptotic notation primarily to describe the running times
 
 * **to remember** we can often describe the running time of an algorithm
 merely by inspecting the algorithm’s overall structure
