@@ -40,6 +40,9 @@
 * FIND-MAX-CROSSING-SUBARRAY is used to find the largest subarray that extends across the middle of the array
 
 * ***
+* # Strassen’s algorithm 
+* The algorithm works by dividing the input matrices into smaller submatrices, and then recursively computing the products of these submatrices
+******
  # substitution method
  * solving two steps:
 1. Guess the solution (by induction role)
