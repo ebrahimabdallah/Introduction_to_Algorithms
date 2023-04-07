@@ -1,6 +1,6 @@
 # chapter 4 introduction to algorhithms
 
-* In this chapter, we turn to a new type of problem-solving method, which is the Divide and Conquer method, in which we divide large, complex problems into simpler and sub-problems that are easy to solve.
+* In this chapter, new type of problem-solving method, which is the Divide and Conquer method, in which we divide large, complex problems into simpler and sub-problems that are easy to solve.
 
 * Divide and Conquer is best suited for problems that can be divided into independent subproblems
  
