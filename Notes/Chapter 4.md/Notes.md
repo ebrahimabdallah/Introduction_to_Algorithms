@@ -45,7 +45,7 @@
 ******
  # substitution method
  * solving two steps:
-1. Guess the solution (by induction role)
+1. Guess the solution 
 2. Use mathematical induction to find the constants and show that the solution works
 
 * **The substitution** method relies on guessing the form of the solution __(Unfortunately, there is no general way to guess the correct solutions) __ which can be difficult in some cases.
