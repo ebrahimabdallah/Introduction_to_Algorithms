@@ -54,7 +54,7 @@
 * T(n) = aT(n/b) + f(n)
 - Find two important conditions __ (a >= 1, b > 1)
 
-* he master method has three cases 
+*  master method has three cases 
 *****
 # Tree
 * Recursion-tree method: converts the recurrence into nodes whose values are the cost at the levels of the recurision
