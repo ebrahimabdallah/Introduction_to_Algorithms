@@ -61,6 +61,6 @@ is a substring of length k
 * A probability distribution is discrete if it is defined over a finite or countably infinite
 sample space
 
-* Bayes's theorem is a fundamental concept in probability theory that describes the relationship between conditional probabilities
+* **Bayes's theorem** is a fundamental concept in probability theory that describes the relationship between conditional probabilities
 
 - P(A|B) = P(B|A) * P(A) / P(B)
