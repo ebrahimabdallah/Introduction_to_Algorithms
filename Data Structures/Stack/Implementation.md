@@ -1,4 +1,4 @@
-*implement a stack using an array
+* implement a stack using an array
 ```
 #include <iostream>
 #include <cmath>
