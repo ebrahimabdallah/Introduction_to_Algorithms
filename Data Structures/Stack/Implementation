@@ -1,4 +1,4 @@
-```
+```Stack
 #include <iostream>
 #include <cmath>
 #include <algorithm>
@@ -82,4 +82,3 @@ int main()
     //S.print();
     return 0;
 }
-```
