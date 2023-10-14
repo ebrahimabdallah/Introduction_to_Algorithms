@@ -1,4 +1,4 @@
-```Stack
+```
 #include <iostream>
 #include <cmath>
 #include <algorithm>
@@ -10,7 +10,7 @@ const int size = 50;
 class stack
 {
     int top;
-    int items[50];
+    int items[size];
 
 public:
     stack() : top(-1)
@@ -18,7 +18,7 @@ public:
 
     void push(int element)
     {
-        if (top >= 49 - 1)
+        if (top >= size - 1)
         {
             cout << "Stack is full" << endl;
         }
@@ -82,3 +82,4 @@ int main()
     //S.print();
     return 0;
 }
+```
