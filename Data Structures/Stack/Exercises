@@ -1,0 +1,96 @@
+10.1-4
+Rewrite ENQUEUE and DEQUEUE to detect underflow and overflow of a queue.
+
+/**
+Queue overflow results from trying 
+to add an element onto a full
+queue and queue underflow happens when trying 
+to remove an element from an empty queue
+**/
+
+#include <iostream>
+using namespace std;
+
+const int MAX_SIZE = 3;  
+
+class Queue {
+private:
+    int arr[MAX_SIZE];
+    int head, tail;
+
+public:
+    Queue() {
+        head = -1;
+        tail = -1;
+    }
+
+    bool empty() {
+        return head == -1 && tail == -1;
+    }
+
+    bool isFull() {
+        return tail == MAX_SIZE - 1;
+    }
+
+    void enqueue(int data) {
+        if (isFull()) {
+            cout << "Queue Overflow" << endl;
+            return;
+        }
+
+        if (empty()) {
+            head = 0; 
+        }
+
+        tail++;
+        arr[tail] = data;
+    }
+
+    void dequeue() {
+        if (empty()) {
+            cout << "Queue Underflow" << endl;
+            return;
+        }
+
+        if (head == tail) {
+            
+            head = -1;
+            tail = -1;
+        }
+        else {
+            head++;
+        }
+    }
+
+    void display() {
+        if (empty()) {
+            cout << "Queue is empty.\n";
+            return;
+        }
+
+        cout << "Queue elements: ";
+        for (int i = head; i <= tail; i++) {
+            cout << arr[i] << " ";
+        }
+        cout << endl;
+    }
+};
+
+int main() {
+    Queue q;
+
+    q.enqueue(1);
+    q.enqueue(2);
+    q.enqueue(3);
+    q.display(); //  1 2 3 max =3
+    q.enqueue(4);
+    q.display();
+    q.dequeue();
+    q.display(); // 2 3 
+    q.dequeue();
+    q.dequeue();
+    q.display(); 
+    q.dequeue();  
+
+    return 0;
+}
