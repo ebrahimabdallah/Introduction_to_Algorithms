@@ -6,12 +6,12 @@
 
 using namespace std;
 
-const int size = 50;
+const int MAX_SIZE = 50;
 
 class stack
 {
     int top;
-    int items[size];
+    int items[MAX_SIZE];
 
 public:
     stack() : top(-1)
@@ -19,7 +19,7 @@ public:
 
     void push(int element)
     {
-        if (top >= size - 1)
+        if (top >= MAX_SIZE - 1)
         {
             cout << "Stack is full" << endl;
         }
