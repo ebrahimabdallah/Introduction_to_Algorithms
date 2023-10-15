@@ -64,7 +64,7 @@ public:
 
     void display() {
         if (empty()) {
-            cout << "Queue is empty.\n";
+            cout << "Queue is empty"<< endl;
             return;
         }
 
