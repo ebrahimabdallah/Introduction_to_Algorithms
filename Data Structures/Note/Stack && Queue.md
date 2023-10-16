@@ -13,14 +13,17 @@
 
 
 * overflow && underflow
+
+* Queue overflow results from trying to add an element onto a full queue and queue
+* underflow happens when trying to remove an element from an empty queue
 ```
-ENQUEUE(Q, x):
-	if head[Q] == tail[Q] + 1
-		then error "overflow"
+enqueue(Q, x):
+	if head[Q] == tail[Q] + 1  //full 
+		 error "overflow"
 	 
-DEQUEUE(Q):
-	if head[Q] == tail[Q]
-		then error "underflow"
+dequeue(Q):
+	if head[Q] == tail[Q] //empty
+		 error "underflow"
  ```
 
  # problems
