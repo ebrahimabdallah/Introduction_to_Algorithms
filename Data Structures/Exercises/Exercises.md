@@ -3,17 +3,17 @@
  
 index [1  2  3  4  5  6] 
 
-4 //inex 1
+4                        4 index 1
 
-4  1 //inex 2
+4  1                     1 //index 2
 
-4  1  3 //inex 3
+4  1  3                   3 //inex 3
 
 dequeue
 
    1  3 
    
-   1  3  8  ////inex 4
+   1  3  8                8 //inex 4  
    
       3  8
 
