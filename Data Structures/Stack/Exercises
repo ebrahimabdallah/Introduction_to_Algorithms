@@ -11,68 +11,59 @@ to remove an element from an empty queue
 #include <iostream>
 using namespace std;
 
-const int MAX_SIZE = 3;  
+const int MAX_SIZE = 5;
 
 class Queue {
-private:
     int arr[MAX_SIZE];
-    int head, tail;
+    int front;
+    int rear;
 
 public:
     Queue() {
-        head = -1;
-        tail = -1;
+        front = -1;
+        rear = -1;
     }
 
-    bool empty() {
-        return head == -1 && tail == -1;
+    bool Full() {
+        return rear == MAX_SIZE - 1;
     }
 
-    bool isFull() {
-        return tail == MAX_SIZE - 1;
+    bool Empty() {
+        return front == -1 || front > rear;
     }
 
-    void enqueue(int data) {
-        if (isFull()) {
+    void enqueue(int x) {
+        if (Full()) {
             cout << "Queue Overflow" << endl;
             return;
         }
 
-        if (empty()) {
-            head = 0; 
+        if (rear == -1 && front == -1) {
+            front++;
         }
 
-        tail++;
-        arr[tail] = data;
+        arr[++rear] = x;
     }
 
-    void dequeue() {
-        if (empty()) {
+    void deQueue() {
+        if (Empty()) {
             cout << "Queue Underflow" << endl;
             return;
         }
 
-        if (head == tail) {
-            
-            head = -1;
-            tail = -1;
-        }
-        else {
-            head++;
-        }
+        front++;
     }
 
-    void display() {
-        if (empty()) {
-            cout << "Queue is empty"<< endl;
-            return;
+    void print() {
+        if (Empty()) {
+            cout << "Queue Empty" << endl;
         }
-
-        cout << "Queue elements: ";
-        for (int i = head; i <= tail; i++) {
-            cout << arr[i] << " ";
+        else {
+            for (int i = front; i <= rear; i++) {
+                cout << arr[i] << " ";
+            }
+            cout << endl;
         }
-        cout << endl;
     }
 };
 
@@ -80,17 +71,19 @@ int main() {
     Queue q;
 
     q.enqueue(1);
-    q.enqueue(2);
     q.enqueue(3);
-    q.display(); //  1 2 3 max =3
     q.enqueue(4);
-    q.display();
-    q.dequeue();
-    q.display(); // 2 3 
-    q.dequeue();
-    q.dequeue();
-    q.display(); 
-    q.dequeue();  
+    q.enqueue(3);
+    q.enqueue(4);
+    q.enqueue(4);
+
+    q.deQueue();
+    q.deQueue();
+    q.deQueue();
+    q.deQueue();
+    q.deQueue();
+    q.deQueue();
+    q.print();
 
     return 0;
 }
