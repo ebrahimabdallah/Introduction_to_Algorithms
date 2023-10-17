@@ -1,6 +1,6 @@
 | # | Stack |Queue |
 | --------------- | --------------- | --------------- |
-| define | Stack is follows the LIFO  |  A queue is follow the FIFO  |
+| define |  abstract data type (ADT) that follows the Last-In-First-Out (LIFO)    |   abstract data type (ADT) that follows the Last-In-First-Out (LIFO)   |
 | Working | Top  | FRONT && REAR  |
 | Operations | Pop && Push  && isEmpty && isFull | Dequeue()  && Enqueue(item)  &&    && isFull()  && isEmpty|
 | underflows | pop an empty stack  | when trying to remove an element from an empty queue|
