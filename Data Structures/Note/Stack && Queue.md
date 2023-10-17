@@ -1,7 +1,7 @@
 | # | Stack |Queue |
 | --------------- | --------------- | --------------- |
 | define |  abstract data type (ADT) that follows the Last-In-First-Out (LIFO)    |A queue is an abstract data type (ADT) that follows the First-In-First-Out (FIFO)    |
-| Working | Top  | FRONT && REAR  |
+| Working | Top  | FRONT && REAR ||Head && Tail |
 | Operations | Pop && Push  && isEmpty && isFull | Dequeue()  && Enqueue(item)  &&    && isFull()  && isEmpty|
 | underflows | pop an empty stack  | when trying to remove an element from an empty queue|
 | overflows |try to push more items on a stack than it can hold. | trying to add an element onto a full |
