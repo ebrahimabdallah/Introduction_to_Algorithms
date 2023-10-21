@@ -9,6 +9,9 @@
 * 1- an address that keeps
 * 2- reference to the next node
 * last node contains null in its second field because it will point to no node
+# Why Use LinkedList
+* Dynamic Size
+* Ease To deletion && insertion
 # The linked list types
 * 1-Singly Linked List :  node has data and an address field that contains a reference to the next node
 * 2-Doubly Linked List : two pointer storage blocks in the doubly linked list
@@ -19,7 +22,7 @@
 |  |linked list don't need a contiguous memory they can grow dynamically|array need a contiguous a block of memory  |
 |  | linked lists are dynamic data structures  |  arrays are static data structures |
 | accessed the elements |Pointers| using index |
-| Operations | Search O(n) && Deleting && Insertion | ## |
+| Operations | Search && Deleting && Insertion | ## |
 
 * sentinel is a dummy object that allows us to simplify boundary conditions
 * The main benefit of using reference states is that it seeks to make list additions and deletions easier and simpler, as developers do not need to deal with the specificity of bounds.
