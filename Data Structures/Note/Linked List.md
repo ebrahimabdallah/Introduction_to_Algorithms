@@ -23,6 +23,9 @@
 |  | linked lists are dynamic data structures  |  arrays are static data structures |
 | accessed the elements |Pointers| using index |
 | Operations | Search && Deleting && Insertion | ## |
+| Random Access | Not Allow | Allow |
+
 
 * sentinel is a dummy object that allows us to simplify boundary conditions
 * The main benefit of using reference states is that it seeks to make list additions and deletions easier and simpler, as developers do not need to deal with the specificity of bounds.
+ 
