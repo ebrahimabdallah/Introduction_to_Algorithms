@@ -22,7 +22,7 @@
 |  |linked list don't need a contiguous memory they can grow dynamically|array need a contiguous a block of memory  |
 |  | linked lists are dynamic data structures  |  arrays are static data structures |
 | accessed the elements |Pointers| using index |
-| Operations | Search && Deleting && Insertion | ## |
+| Operations |Create && Display && Count && Search && Deleting && Insertion && Replace | ## |
 | Random Access | Not Allow | Allow |
 
 
